@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body{
+    scroll-behavior: smooth;
+}
+
+:root{
+    --primaria: #4f46e5;
+    --secundaria: #7c3aed;
+    --escuro: #0f172a;
+    --maisEscuro: #0a0f1c;
+    --claro: #e2e8f0;
+    --vidro: rgba(255, 255, 255, 0.1);
+}
+
+body{
+    background: var(--escuro);
+    color: var(--claro);
+    overflow-x: hidden;
+}
+
+.navbar{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 1.5rem;
+    background: rgba(15, 23, 42, 0.8);
+    z-index: 100;
+}
+
+.menus{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.menu-link{
+    color: var(--claro);
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+    padding: 0.5rem 0;
+}
+
+.menu-link::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(90deg,var(--primaria), var(--secundaria));
+    transition: width 0.5s ease;
+}
+
+.menu-link:hover::after{
+    width: 100%;
+    transition: width 0.3s;
+}
+
+.cabecalho{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0 1rem;
+}
+
+.foto-perfil{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--vidro);
+    box-shadow: 0 0 10px var(--primaria);
+    margin-bottom: 1rem;
+    animation: flutuar 3s ease-in-out infinite;
+}
+
+.cabecalho h1{
+    color: var(--primaria);
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.cabecalho p{
+    font-size: 1.5rem;
+}
+
+.sobre-mim{
+    padding: 6rem 2rem;
+    text-align: center;
+}
+
+.sobre-titulo{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.sobre-conteudo{
+    padding: 2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 16px;
+    border: 1px solid var(--vidro);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.05)
+}
+
+.sobre-texto{
+    font-size: 1rem;
+    line-height: 1.9;
+
+}
+
+.projetos{
+    padding: 6rem 2rem;
+    text-align: center;
+}
+
+.projetos-caixa{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.projetos-titulo{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.projetos-card:hover{
+    box-shadow: 0 0 10px var(--primaria);
+    transform: translateY(-10px) scale(1.05);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.projetos-card{
+    background: var(--maisEscuro);
+    border-radius: 16px;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    border: 1px solid var(--vidro);
+    overflow: hidden;
+}
+
+.projetos-card img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.projeto-titulo{
+    font-size: 1.5rem;
+    margin: 1rem 0 0.5rem 0;
+    font-weight: 600;
+}
+
+.projeto-descricao{
+    font-size: 1rem;
+    padding: 0 1rem 1rem 1rem;
+    line-height: 1.2;
+}
+
+.contato{
+    padding: 6rem 2rem;
+    text-align: center;
+}  
+
+.contato-titulo{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.contato-formulario{
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    border: 1px solid var(--vidro);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contato-formulario input, .contato-formulario textarea{
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    border: 1px solid var(--vidro);
+    background: var(--maisEscuro);
+    color: var(--claro);
+    font-size: 1rem;
+    resize: none;
+}
+
+.contato-formulario input:focus, .contato-formulario textarea:focus{
+    outline: none;
+    border-color: var(--primaria);
+    box-shadow: 0 0 10px var(--primaria);
+    transition: all 0.3s ease;
+}
+
+.contato-formulario input::placeholder, .contato-formulario textarea::placeholder{
+    color: var(--claro);
+    opacity: 0.2;
+}
+
+.contato-formulario button{
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    border: none;
+    background: linear-gradient(90deg, var(--primaria), var(--secundaria));
+    color: var(--claro);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contato-formulario button:hover{
+    background: linear-gradient(90deg, var(--secundaria), var(--primaria));
+}
+
+.particulas{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    background: 
+    radial-gradient(circle at 10% 20%, var(--primaria) 0%, transparent 20%),
+    radial-gradient(circle at 80% 30%, var(--secundaria) 0%, transparent 20%),
+    var(--maisEscuro);
+}
+
+.footer{    
+    text-align: center;
+    padding: 1rem;
+    background: rgba(15, 23, 42, 0.8);
+    color: var(--claro);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+@keyframes flutuar {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
