@@ -2,97 +2,127 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Portfólio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Portfólio - Eduardo Rodrigues</title>
+  <meta name="description" content="Portfólio de Eduardo Rodrigues - Desenvolvedor Web e Desktop especializado em soluções digitais modernas.">
+  <meta name="author" content="Eduardo Rodrigues">
 </head>
 
 <body>
 
-    <div class="particulas"></div>
+  <div class="particulas"></div>
 
-    <nav class="navbar">
-        <ul class="menus">
-            <li><a href="#home" class="menu-link">Início</a></li>
-            <li><a href="#sobre" class="menu-link">Sobre Mim</a></li>
-            <li><a href="#projetos" class="menu-link">Projetos</a></li>
-            <li><a href="#contato" class="menu-link">Contato</a></li>
-        </ul>
-    </nav>
+  <nav class="navbar">
+    <ul class="menus">
+      <li><a href="#home" class="menu-link">Início</a></li>
+      <li><a href="#sobre" class="menu-link">Sobre Mim</a></li>
+      <li><a href="#projetos" class="menu-link">Projetos</a></li>
+      <li><a href="#contato" class="menu-link">Contato</a></li>
+    </ul>
+  </nav>
 
-    <main id="home" class="cabecalho">
-        <img src="./img/eduardo.jpg" alt="Foto de Eduardo Rodrigues" class="foto-perfil">
-        <h1>Eduardo Rodrigues</h1>
-        <p>Desenvolvedor Web e Desktop</p>
-    </main>
+  <main id="home" class="cabecalho">
+    <img src="./img/eduardo.jpg" alt="Foto de Eduardo Rodrigues" class="foto-perfil">
+    <h1>Eduardo Rodrigues</h1>
+    <p>Desenvolvedor Web e Desktop</p>
+  </main>
 
-    <section id="sobre" class="sobre-mim">
-        <h2 class="sobre-titulo">Sobre Mim</h2>
-        <div class="sobre-conteudo">
-            <p class="sobre-texto">
-                Olá! Meu nome é Eduardo Rodrigues, tenho 28 anos e sou um desenvolvedor web apaixonado por criar
-                soluções digitais inovadoras. Atualmente, estou cursando Sistemas de Infromação no IFCE Campus Cedro.
-                Tenho experiência em HTML, CSS, JavaScript, React, Node.js e bancos de dados como MySQL e
-                Postgres. Estou sempre buscando aprender novas tecnologias e aprimorar minhas habilidades para entregar
-                projetos de alta qualidade.
-            </p>
-        </div>
-    </section>
-    <section id="projetos" class="projetos">
-        <h2 class="projetos-titulo">Meus Projetos</h2>
+  <section id="sobre" class="sobre-mim">
+    <h2 class="sobre-titulo">Sobre Mim</h2>
+    <div class="sobre-conteudo">
+      <p class="sobre-texto">
+        Olá! Meu nome é Eduardo Rodrigues, tenho 28 anos e sou um desenvolvedor web apaixonado por criar
+        soluções digitais inovadoras. Atualmente, estou cursando Sistemas de Informação no IFCE Campus Cedro.
+        Tenho experiência em HTML, CSS, JavaScript, React, Node.js e bancos de dados como MySQL e PostgreSQL.
+        Estou sempre buscando aprender novas tecnologias e aprimorar minhas habilidades para entregar
+        projetos de alta qualidade.
+      </p>
+    </div>
+  </section>
 
-        <div class="projetos-caixa">
-            <div class="projetos-card">
-                <img src="./img/barbershop.png" alt="Projeto 1" class="projeto-imagem">
-                <h3 class="projeto-titulo">Barbershop</h3>
-                <p class="projeto-descricao">Sistema desktop criado para ajudar a modernizar a forma de agendamento em
-                    barbearias.</p>
-            </div>
+  <section id="projetos" class="projetos">
+    <h2 class="projetos-titulo">Meus Projetos</h2>
 
-            <div class="projetos-card">
-                <img src="./img/Artesanato.png" alt="Projeto 2" class="projeto-imagem">
-                <h3 class="projeto-titulo">Venda de Artesanato</h3>
-                <p class="projeto-descricao">Descrição do Projeto 2</p>
-            </div>
+    <div class="projetos-caixa">
 
-            <div class="projetos-card">
-                <img src="projeto3.png" alt="Projeto 3" class="projeto-imagem">
-                <h3 class="projeto-titulo">Projeto 3</h3>
-                <p class="projeto-descricao">Descrição do Projeto 3</p>
-            </div>
-        </div>
-    </section>
-    <section id="contato" class="contato">
-        <h2 class="contato-titulo">Entre em Contato</h2>
-        <form class="contato-formulario" onsubmit="enviarWhatsapp(event)">
-            <input placeholder="Nome" type="text" id="nome" name="nome" required>
-            <input placeholder="Email" type="email" id="email" name="email" required>
-            <textarea placeholder="Digite sua Mensagem" id="mensagem" name="mensagem" required></textarea>
-            <button type="submit">Enviar via Whatsapp</button>
-        </form>
-    </section>
+      <div class="projetos-card">
+        <a href="https://github.com/edufr0/Barbershop" target="_blank" rel="noopener noreferrer">
+          <img src="./img/barbershop.png" alt="Projeto Barbershop" class="projeto-imagem">
+          <h3 class="projeto-titulo">Barbershop</h3>
+          <p class="projeto-descricao">
+            Sistema desktop criado para ajudar a modernizar a forma de agendamento em barbearias.
+          </p>
+        </a>
+      </div>
 
-    <footer class="rodape">
-        <p>&copy; 2025 Eduardo Rodrigues. Todos os direitos reservados.</p>
-    </footer>
+      <div class="projetos-card">
+        <a href="https://github.com/edufr0/Artesanato-CE" target="_blank" rel="noopener noreferrer">
+          <img src="./img/projeto2.png" alt="Venda de Artesanato" class="projeto-imagem">
+          <h3 class="projeto-titulo">Venda de Artesanato</h3>
+          <p class="projeto-descricao">
+            Plataforma web para exibição e venda de produtos artesanais.
+          </p>
+        </a>
+      </div>
 
-    <script>
-        function enviarWhatsapp(event) {
-            event.preventDefault();
-            const nome = document.getElementById('nome');
-            const email = document.getElementById('email');
-            const mensagem = document.getElementById('mensagem');
-            const telefone = '5588997022528';
+      <div class="projetos-card">
+        <a href="https://github.com/edufr0/projeto3" target="_blank" rel="noopener noreferrer">
+          <img src="./img/projeto3.png" alt="Projeto 3" class="projeto-imagem">
+          <h3 class="projeto-titulo">Projeto 3</h3>
+          <p class="projeto-descricao">
+            Outro projeto de desenvolvimento com foco em aprendizado e inovação.
+          </p>
+        </a>
+      </div>
 
-            const texto = `Olá, meu nome é ${nome.value}, meu email é ${email.value}, ${mensagem.value}`;
-            const msgFormatada = encodeURIComponent(texto);
-            const url = `https://api.whatsapp.com/send?phone=${telefone}&text=${msgFormatada}`;
+    </div>
+  </section>
 
-            window.open(url, '_blank');
-        }
-    </script>
+  <section id="contato" class="contato">
+    <h2 class="contato-titulo">Entre em Contato</h2>
+    <form class="contato-formulario" onsubmit="enviarWhatsapp(event)">
+      <input placeholder="Nome" type="text" id="nome" name="nome" required>
+      <input placeholder="Email" type="email" id="email" name="email" required>
+      <textarea placeholder="Digite sua Mensagem" id="mensagem" name="mensagem" required></textarea>
+      <button type="submit">Enviar via Whatsapp</button>
+    </form>
+  </section>
+
+  <footer class="rodape">
+    <p>&copy; 2025 Eduardo Rodrigues. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    // Envio da mensagem via WhatsApp
+    function enviarWhatsapp(event) {
+      event.preventDefault();
+      const nome = document.getElementById('nome').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const mensagem = document.getElementById('mensagem').value.trim();
+      const telefone = '5588997022528';
+
+      if (!nome || !email || !mensagem) {
+        alert('Por favor, preencha todos os campos antes de enviar.');
+        return;
+      }
+
+      const texto = `*Nova mensagem do portfólio*%0A%0A👤 *Nome:* ${nome}%0A📧 *Email:* ${email}%0A💬 *Mensagem:* ${mensagem}`;
+      const url = `https://api.whatsapp.com/send?phone=${telefone}&text=${texto}`;
+      window.open(url, '_blank');
+    }
+
+    const sections = document.querySelectorAll('section, main');
+    const aparecer = () => {
+      const gatilho = window.innerHeight * 0.8;
+      sections.forEach(sec => {
+        const topo = sec.getBoundingClientRect().top;
+        if (topo < gatilho) sec.classList.add('mostrar');
+      });
+    };
+    window.addEventListener('scroll', aparecer);
+    aparecer();
+  </script>
 </body>
-
-
 </html>
